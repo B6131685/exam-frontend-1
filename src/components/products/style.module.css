@@ -12,6 +12,7 @@
     padding: 30px var(--border-width) 10px var(--border-width);
     display: flex;
     gap: 10px;
+    flex-wrap: wrap;
 }
 
 .category .item{
@@ -27,13 +28,13 @@
 }
 
 @media screen and (width < 550px) {
-    .container{
+    .listProducts{
         grid-template-columns: 1fr;
     }
 }
 
 @media screen and (700px > width >= 550px) {
-    .container{
+    .listProducts{
         grid-template-columns: 1fr 1fr;
     }
 }
