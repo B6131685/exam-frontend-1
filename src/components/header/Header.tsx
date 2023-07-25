@@ -1,4 +1,4 @@
-import { useContext,useState } from "react";
+import React,{ useContext,useState } from "react";
 import style from "./style.module.css";
 import CartContext from "../../contexts/Cart";
 import Cart from "../cart/cart";
@@ -6,8 +6,9 @@ import { Toaster } from "react-hot-toast";
 const Header = () => {
   const cartContext = useContext(CartContext);
   const [open, setOpen] = useState<boolean>(false);
-  function handleCart(e) {
-    if (e.target.id === "cart-btn") setOpen((prev) => !prev);
+  function handleCart(e:React.MouseEvent<HTMLDivElement, MouseEvent>) {
+    const target = e.target as HTMLDivElement;
+    if (target.id === "cart-btn") setOpen((prev) => !prev);
   }
   return (
     <>
