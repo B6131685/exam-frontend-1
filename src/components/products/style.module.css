@@ -1,0 +1,39 @@
+.container{
+    background-color: #F9F5F6;
+}
+.listProducts{
+    padding: 10px var(--border-width);
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 15px;
+}
+
+.category{
+    padding: 30px var(--border-width) 10px var(--border-width);
+    display: flex;
+    gap: 10px;
+}
+
+.category .item{
+    cursor: pointer;
+    border-radius: 20px;
+    padding: 0 10px;
+    background-color: hsl(28, 87%, 79%);
+}
+
+.category .item.active{
+    color: white;
+    background-color: hsl(28, 79%, 48%);
+}
+
+@media screen and (width < 550px) {
+    .container{
+        grid-template-columns: 1fr;
+    }
+}
+
+@media screen and (700px > width >= 550px) {
+    .container{
+        grid-template-columns: 1fr 1fr;
+    }
+}

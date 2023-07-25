@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Prompt:wght@300;400;500;600;700&display=swap');
+:root{
+  --border-width: 30px;
+  --black: #000;
+  --whilte: #FFF;
+  --btn-blue-200: hsl(226, 100%, 59%);
+  --btn-blue-500: hsl(226, 68%, 41%);
+  --f-w-300: 300;
+  --f-w-400: 400;
+  --f-w-500: 500;
+  --f-w-600: 600;
+  --f-w-700: 700;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Prompt', sans-serif;
+}
+
+
+@media screen and (width < 300px) {
+  :root{
+    --border-width: 5px;
+  }
+}
