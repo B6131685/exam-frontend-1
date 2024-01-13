@@ -7,7 +7,12 @@ $padding: 10px;
   grid-template-rows: 3fr 1fr;
   overflow: hidden;
   box-shadow: rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px;
-  background-color: white;
+  background-color: white;  
+  transition: all 0.35s ease-out;
+  &:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+  }
 }
 
 @mixin info_paddin {
@@ -27,6 +32,8 @@ $padding: 10px;
       justify-self: center;
     }
     .category {
+      margin-top: 5px;
+      margin-left: 5px;
       justify-self: start;
       align-self: start;
       border-radius: 20px;
