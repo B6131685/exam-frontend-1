@@ -4,12 +4,18 @@
   --black: #000;
   --whilte: #FFF;
   --btn-blue-200: hsl(226, 100%, 59%);
+  --bg: #e3e3e3;
   --btn-blue-500: hsl(226, 68%, 41%);
   --f-w-300: 300;
   --f-w-400: 400;
   --f-w-500: 500;
   --f-w-600: 600;
   --f-w-700: 700;
+}
+
+#root{
+    height: 100%;
+    background-color: var(--bg);
 }
 
 *{
@@ -19,6 +25,15 @@
   font-family: 'Prompt', sans-serif;
 }
 
+html, body{
+  min-height: 100%;
+  height: 100%;
+  background-color: var(--bg);
+}
+
+body{
+  height: 100%;
+}
 
 @media screen and (width < 300px) {
   :root{

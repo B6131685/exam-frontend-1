@@ -1,6 +1,7 @@
 .container{
-    background-color: #F9F5F6;
+    background-color: var(--bg);
     padding-bottom: 100px;
+    min-height: 100%;
 }
 .listProducts{
     padding: 10px var(--border-width);
@@ -34,7 +35,7 @@
     }
 }
 
-@media screen and (700px > width >= 550px) {
+@media screen and (1000px > width >= 550px) {
     .listProducts{
         grid-template-columns: 1fr 1fr;
     }
