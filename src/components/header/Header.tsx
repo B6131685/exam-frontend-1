@@ -1,7 +1,7 @@
 import React,{ useContext,useEffect,useRef,useState } from "react";
 import style from "./style.module.css";
-import CartContext from "../../contexts/Cart";
-import Cart from "../cart/cart";
+import CartContext from "contexts/Cart";
+import Cart from "components/cart/cart";
 import { Toaster } from "react-hot-toast";
 const Header = () => {
   const cartContext = useContext(CartContext);

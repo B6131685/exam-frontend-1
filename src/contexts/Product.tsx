@@ -1,5 +1,5 @@
 import { createContext, useReducer, ReactNode } from "react";
-import { IProducts } from "../components/products/interface";
+import { IProducts } from "components/products/interface";
 
 type SetProducts = { type: "set"; playload: IProducts[] };
 interface IContext {

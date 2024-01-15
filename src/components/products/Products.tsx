@@ -2,8 +2,8 @@ import { useContext, useEffect, useState } from "react";
 import style from "./style.module.css";
 import axios from "axios";
 import { IProducts } from "./interface";
-import Card, { Card_Skeleton } from "../card/Card";
-import ProductContext from "../../contexts/Product";
+import Card, { Card_Skeleton } from "components/card/Card";
+import ProductContext from "contexts/Product";
 import Skeleton from "react-loading-skeleton";
 
 const Products = () => {

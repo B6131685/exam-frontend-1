@@ -1,8 +1,8 @@
 import { useContext, useEffect, useState } from "react";
-import ProductContext from "../../contexts/Product";
-import CartContext from "../../contexts/Cart";
+import ProductContext from "contexts/Product";
+import CartContext from "contexts/Cart";
 import style from "./style.module.scss";
-import bxCart from '../../assets/bx-cart.svg'
+import bxCart from 'src/assets/bx-cart.svg'
 interface IDisplayCart {
   total: number;
   items: {

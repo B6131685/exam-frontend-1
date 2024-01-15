@@ -2,11 +2,11 @@ import Skeleton from "react-loading-skeleton";
 import style from "./style.module.scss";
 // import colorthief from 'colorthief'
 import ColorThief from "@neutrixs/colorthief";
-import { IProducts } from "../products/interface";
-import star from "../../assets/star.svg";
-import middleDot from "../../assets/middle-dot.svg";
+import { IProducts } from "components/products/interface";
+import star from "src/assets/star.svg";
+import middleDot from "src/assets/middle-dot.svg";
 import { SyntheticEvent, useContext, useRef } from "react";
-import CartContext from "../../contexts/Cart";
+import CartContext from "contexts/Cart";
 const Card = ({ title, rating, category, image, price, id }: IProducts) => {
   const cartContext = useContext(CartContext);
   const ref = useRef<HTMLDivElement | null>(null)
